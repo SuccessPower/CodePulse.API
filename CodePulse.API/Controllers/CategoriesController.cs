@@ -31,11 +31,12 @@ namespace CodePulse.API.Controllers
 
             // Map Domain Models to Dtos
             var response = new CategoryDto
-            {
+            {   
+                Id = request.Id,
                 Name = request.Name,
                 UrlHandle = request.UrlHandle,
             };
-
+             
             return Ok(response);
         }
     }
